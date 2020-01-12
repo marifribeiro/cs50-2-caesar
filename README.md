@@ -40,7 +40,7 @@ This program will encrypt and decrypt your notes automatically for you. Just typ
 
 # About the application
 
-This is a web application that can be accessed through a link, just like any website. It was developed fully in JavaScript, meaning that all the logic works client-side, and none of the information inputed is stored anywhere. It also uses HTML and CSS to provide a better user experience, including for mobile screens.
+This is a command line application and it was developed fully in C.
 
 The encriptation logic and functions can be found in the cipher.js file.
 
@@ -56,33 +56,21 @@ Using a key of 4, this text will be encrypted as:
 
 As you can see, the letters with accents and puctuation were not encrypted, so you should have that in mind when typing your message.
 
-Also, the program allows for **negative key input**. If you'd like to, let's say, encrypt the same message above with an **-1 key**, it will **subtract** 1 from the letters values. Let's see an example:
-
-**¡Este es un texto de ejemplo! ¿Cómo será encriptado?**
-
-Using a key of -1, this text will be encrypted as:
-
-**¡Drsd dr tm sdwsn cd didlokn! ¿Bóln rdqá dmbqhoszcn?**
-
-And finally, in this application, the alphabet has 25 letters (because we started at 0, remember?) so inserting a key of 26 will go around the alphabet back to the letters you typed. That means that it will not be encrypted.
+In this application, the alphabet has 25 letters (because we started at 0, remember?) so inserting a key of 26 will go around the alphabet back to the letters you typed. That means that it will not be encrypted.
 
 
 ## Usage
 
-**1. Access the program** <br>
-https://maryplank.github.io/SAP003-cipher/
+Clone this repository, then, through the command line, enter the program's folder and run the following command to compile:
 
-**2. Type your text** <br>
-On the top text-box, type the text you want to cipher or decipher. You can go nuts and write as many lines as you want, there is no limit.
+`gcc -o caesar caesar.c -ls50`
 
-**3. Insert secret key** <br>
-On the middle box, type a numeric key to encode or decode. It may be a negative number to really mess with whoever tries to decode your note. It must be an integer (you can try to type a decimal number, it just won't work).
+Then run the application. Keep in mind the key to encrypt must be an integer:
 
-**4. Choose an operation** <br>
-You can, then, cipher or decipher the text you entered. 
-*For the curious ones:* 'Cipher it!' button will **add** the key value to the alphabet letters, ignoring non-alphabetical characters. 'Decipher it!' button will **subtract** the key value from the letters. Inputting a negative key will work the other way around.
+`./caesar <numerical key>`
 
-**5. See your secret code!** <br>
-See your secret or not-so-secret-anymore message show up at the bottom text-box. Copy it to send an encrypted message or just read the decrypted message.
+The program will ask for a plaintext, which will be spilled back to you using the numeric key you inserted in the previous command.
 
-Hope you guys like it :)
+```Plaintext: <text to encrypt>
+Ciphertext: <return of the text you typed using the key you provided>```
+
