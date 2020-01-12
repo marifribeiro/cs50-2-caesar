@@ -2,7 +2,7 @@
 
 1. [Caesar's Cipher](https://github.com/maryplank/SAP003-cipher#caesars-cipher) 
 
-2.  [How it works](https://github.com/maryplank/SAP003-cipher#how-it-works)
+2. [How it works](https://github.com/maryplank/SAP003-cipher#how-it-works)
 
 3. [About the aplication](https://github.com/maryplank/SAP003-cipher#about-the-application)
 
@@ -11,7 +11,7 @@
 # Caesar's Cipher
 
 Are you familiar with Caesar's cipher?
-It's a simple encriptacion method where you shift each letter of the text with an according numerical key. 
+It's a simple encryption method where you shift each letter of the text with an according numerical key. 
 
 For example, the word "LOVE", when encrypted using Caesar's cipher with a *key of 4 (this will be our little secret, ok?)* will become "PSZI".
 
