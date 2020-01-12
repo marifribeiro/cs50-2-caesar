@@ -11,7 +11,7 @@
 # Caesar's Cipher
 
 Are you familiar with Caesar's cipher?
-It's a simple encryption method where you shift each letter of the text with an according numerical key. 
+It's a simple encrypt method where you shift each letter of the text with an according numerical key. 
 
 For example, the word "LOVE", when encrypted using Caesar's cipher with a *key of 4 (this will be our little secret, ok?)* will become "PSZI".
 
@@ -36,13 +36,9 @@ If we add our *super-secret key of 4*, our code will be encrypted like this:
 |V     |21    |+ 4        |25      |Z           |
 |E     |4     |+ 4        |8       |I           |
 
-This program will encrypt and decrypt your notes automatically for you. Just type the text you want to encrypt, or the text you received and want to decrypt, and we will do all the work for you.
-
 # About the application
 
 This is a command line application and it was developed fully in C.
-
-The encriptation logic and functions can be found in the cipher.js file.
 
 It will encrypt uppercase letters, keeping them uppercased and the same goes for lowercase letters. Numbers, punctuation (commas, periods, exclamation points and question marks) and special characters (like letters with accents and other signals) will remain as they are typed, they will be not encrypted.
 
