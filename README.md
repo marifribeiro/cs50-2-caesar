@@ -57,6 +57,7 @@ In this application, the alphabet has 25 letters (because we started at 0, remem
 
 ## Usage
 
+You will need to install the [CS50 library](https://cs50.readthedocs.io/library/c/) to use this program.
 Clone this repository, then, through the command line, enter the program's folder and run the following command to compile:
 
 `gcc -o caesar caesar.c -ls50`
