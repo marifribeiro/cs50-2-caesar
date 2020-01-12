@@ -71,6 +71,8 @@ Then run the application. Keep in mind the key to encrypt must be an integer:
 
 The program will ask for a plaintext, which will be spilled back to you using the numeric key you inserted in the previous command.
 
-```Plaintext: <text to encrypt>
-Ciphertext: <return of the text you typed using the key you provided>```
+```
+Plaintext: <text to encrypt>
+Ciphertext: <return of the text you typed using the key you provided>
+```
 
